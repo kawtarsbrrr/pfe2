@@ -14,7 +14,7 @@ namespace pfe
         {
             if (cn.State == ConnectionState.Closed)
             {
-                cn.ConnectionString = "Data Source=DESKTOP-SFCSVTU\\SQLEXPRESS;Initial Catalog=magasin;Integrated Security=True";
+                cn.ConnectionString = "Data Source=DESKTOP-GM7PTVC\\SQLEXPRESS01;Initial Catalog=gestion_stock;Integrated Security=True";
                 cn.Open();
             }
         }
