@@ -6,6 +6,7 @@ namespace pfe
     public partial class Client : Form
     {
         private connection ado = new connection();
+
         public Client()
         {
             InitializeComponent();
@@ -61,9 +62,10 @@ namespace pfe
 
         private void button2_Click(object sender, EventArgs e)
         {
-
         }
-        int currentClt = 0;
+
+        private int currentClt = 0;
+
         private void dataGridClt_CellDoubleClick(object sender, DataGridViewCellEventArgs e)
         {
             ado.cmd.CommandText = "select * from client where code_clt =" + dataGridClt.Rows[e.RowIndex].Cells[0].Value;
@@ -76,13 +78,34 @@ namespace pfe
                 nom_clt.Text = ado.dr["raisonsocial"].ToString();
                 tele_clt.Text = ado.dr["tele_clt"].ToString();
                 email_clt.Text = ado.dr["email_clt"].ToString();
-                
             }
             ado.dr.Close();
             tabControl1.SelectedTab = tabPage2;
             button1.Enabled = false;
             button3.Enabled = true;
             button4.Enabled = true;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            if (cin_clt.Text == "" || nom_clt.Text == "" || tele_clt.Text == "" || email_clt.Text == "")
+            {
+                MessageBox.Show("remplir tout les champs svp");
+                return;
+            }//making sure no input box is empty, gotta be full :)
+            ado.cmd.CommandText = "insert into client(code_clt,cin_clt, nom_clt,prenom_clt,tele_clt,email_clt) " +
+                "values (" + cin_clt.Text + "','" + nom_clt.Text + "','" +
+                tele_clt.Text + "','" + email_clt.Text + "')";
+            ado.cmd.Connection = ado.cn;
+            ado.cmd.ExecuteNonQuery(); //adding new data to database
+
+            MessageBox.Show("done");
+
+            cin_clt.Text = "";
+            nom_clt.Text = "";
+            tele_clt.Text = "";
+            email_clt.Text = "";
+            //clearing textboxes for new entry
         }
     }
 }
