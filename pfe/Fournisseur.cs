@@ -60,6 +60,14 @@ namespace pfe
 
         private void button4_Click(object sender, EventArgs e)
         {
+            ICE.Text = "";
+            raison_social.Text = "";
+            tele_frs.Text = "";
+            email_frs.Text = "";
+            registre_com.Text = "";
+            id_fiscale.Text = "";
+            adresse.Text = "";
+            ville.Text = ""; //clearing textboxes for new entry
             tabControl1.SelectedTab = tabPage2;
             button1.Enabled = true;
             button3.Enabled = false;
