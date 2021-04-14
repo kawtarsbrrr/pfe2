@@ -45,6 +45,7 @@ namespace pfe
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //test
             dataGridFrs.Rows.Clear();
             ado.cmd.CommandText = "select * from fournisseur";
             ado.cmd.Connection = ado.cn;
