@@ -30,5 +30,25 @@ namespace pfe
             Fournisseur fournisseur = new Fournisseur();
             fournisseur.Show();
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<Client>().Count() == 1)
+            {
+                Application.OpenForms.OfType<Client>().First().Close();
+            }
+            Client client = new Client();
+            client.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<Article>().Count() == 1)
+            {
+                Application.OpenForms.OfType<Article>().First().Close();
+            }
+            Article article = new Article();
+            article.Show();
+        }
     }
 }
