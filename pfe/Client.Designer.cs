@@ -68,7 +68,7 @@ namespace pfe
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(-4, 2);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(908, 526);
@@ -83,9 +83,9 @@ namespace pfe
             this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.button9);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(900, 500);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
@@ -208,9 +208,9 @@ namespace pfe
             this.tabPage2.Controls.Add(this.label2);
             this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(900, 500);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
@@ -219,7 +219,7 @@ namespace pfe
             // button2
             // 
             this.button2.Location = new System.Drawing.Point(451, 364);
-            this.button2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 28);
             this.button2.TabIndex = 27;
@@ -229,7 +229,7 @@ namespace pfe
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(364, 364);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 28);
             this.button1.TabIndex = 26;
@@ -239,7 +239,7 @@ namespace pfe
             // email_clt
             // 
             this.email_clt.Location = new System.Drawing.Point(451, 323);
-            this.email_clt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.email_clt.Margin = new System.Windows.Forms.Padding(2);
             this.email_clt.Name = "email_clt";
             this.email_clt.Size = new System.Drawing.Size(92, 20);
             this.email_clt.TabIndex = 25;
@@ -247,7 +247,7 @@ namespace pfe
             // tele_clt
             // 
             this.tele_clt.Location = new System.Drawing.Point(451, 284);
-            this.tele_clt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tele_clt.Margin = new System.Windows.Forms.Padding(2);
             this.tele_clt.Name = "tele_clt";
             this.tele_clt.Size = new System.Drawing.Size(92, 20);
             this.tele_clt.TabIndex = 24;
@@ -255,7 +255,7 @@ namespace pfe
             // prenom_clt
             // 
             this.prenom_clt.Location = new System.Drawing.Point(451, 241);
-            this.prenom_clt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.prenom_clt.Margin = new System.Windows.Forms.Padding(2);
             this.prenom_clt.Name = "prenom_clt";
             this.prenom_clt.Size = new System.Drawing.Size(92, 20);
             this.prenom_clt.TabIndex = 23;
@@ -263,7 +263,7 @@ namespace pfe
             // nom_clt
             // 
             this.nom_clt.Location = new System.Drawing.Point(451, 197);
-            this.nom_clt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.nom_clt.Margin = new System.Windows.Forms.Padding(2);
             this.nom_clt.Name = "nom_clt";
             this.nom_clt.Size = new System.Drawing.Size(92, 20);
             this.nom_clt.TabIndex = 22;
@@ -271,7 +271,7 @@ namespace pfe
             // cin_clt
             // 
             this.cin_clt.Location = new System.Drawing.Point(451, 151);
-            this.cin_clt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.cin_clt.Margin = new System.Windows.Forms.Padding(2);
             this.cin_clt.Name = "cin_clt";
             this.cin_clt.Size = new System.Drawing.Size(92, 20);
             this.cin_clt.TabIndex = 21;
@@ -279,7 +279,7 @@ namespace pfe
             // code_clt
             // 
             this.code_clt.Location = new System.Drawing.Point(451, 110);
-            this.code_clt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.code_clt.Margin = new System.Windows.Forms.Padding(2);
             this.code_clt.Name = "code_clt";
             this.code_clt.Size = new System.Drawing.Size(92, 20);
             this.code_clt.TabIndex = 20;
@@ -340,9 +340,10 @@ namespace pfe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(898, 528);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Client";
             this.Text = "Client";
+            this.Load += new System.EventHandler(this.Client_Load);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
             this.tabPage1.PerformLayout();

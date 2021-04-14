@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace pfe
@@ -29,7 +23,7 @@ namespace pfe
 
         private void button5_Click(object sender, EventArgs e)
         {
-            if(Application.OpenForms.OfType<Fournisseur>().Count() == 1)
+            if (Application.OpenForms.OfType<Fournisseur>().Count() == 1)
             {
                 Application.OpenForms.OfType<Fournisseur>().First().Close();
             }
