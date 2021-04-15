@@ -39,7 +39,7 @@ namespace pfe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(236, 49);
+            this.button1.Location = new System.Drawing.Point(469, 166);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(56, 19);
@@ -49,7 +49,7 @@ namespace pfe
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(236, 77);
+            this.button2.Location = new System.Drawing.Point(469, 189);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(56, 19);
@@ -59,7 +59,7 @@ namespace pfe
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(214, 118);
+            this.button3.Location = new System.Drawing.Point(447, 212);
             this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(100, 39);
@@ -70,7 +70,7 @@ namespace pfe
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(214, 161);
+            this.button4.Location = new System.Drawing.Point(447, 255);
             this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(100, 39);
@@ -81,7 +81,7 @@ namespace pfe
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(214, 204);
+            this.button5.Location = new System.Drawing.Point(447, 298);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(100, 39);
@@ -92,7 +92,7 @@ namespace pfe
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(214, 247);
+            this.button6.Location = new System.Drawing.Point(447, 341);
             this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(100, 40);
@@ -105,7 +105,7 @@ namespace pfe
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(994, 536);
             this.Controls.Add(this.button6);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.button4);
@@ -114,6 +114,7 @@ namespace pfe
             this.Controls.Add(this.button1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "MenuPrincipal";
             this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.ResumeLayout(false);

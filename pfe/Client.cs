@@ -142,5 +142,13 @@ namespace pfe
 
             MessageBox.Show("done");
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            ado.cmd.CommandText = "delete from client where code_clt =" + currentClt;
+            ado.cmd.Connection = ado.cn;
+            ado.cmd.ExecuteNonQuery();
+            MessageBox.Show("suppression faite");
+        }
     }
 }

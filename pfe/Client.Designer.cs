@@ -32,6 +32,11 @@ namespace pfe
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridClt = new System.Windows.Forms.DataGridView();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.searchBoxClt = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
@@ -50,11 +55,9 @@ namespace pfe
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.button5 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button10 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClt)).BeginInit();
@@ -65,15 +68,18 @@ namespace pfe
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(-4, 2);
+            this.tabControl1.Location = new System.Drawing.Point(11, 11);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(908, 526);
+            this.tabControl1.Size = new System.Drawing.Size(972, 514);
             this.tabControl1.TabIndex = 0;
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button10);
+            this.tabPage1.Controls.Add(this.button6);
+            this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.dataGridClt);
             this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.searchBoxClt);
@@ -84,7 +90,7 @@ namespace pfe
             this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage1.Size = new System.Drawing.Size(900, 500);
+            this.tabPage1.Size = new System.Drawing.Size(964, 488);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -104,6 +110,41 @@ namespace pfe
             this.dataGridClt.Size = new System.Drawing.Size(647, 289);
             this.dataGridClt.TabIndex = 17;
             this.dataGridClt.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClt_CellDoubleClick);
+            // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "code client";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "CIN ";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Raison Social";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "GSM";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "e-mail";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
             // label8
             // 
@@ -176,16 +217,17 @@ namespace pfe
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(207, 364);
+            this.button4.Location = new System.Drawing.Point(296, 364);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 28);
             this.button4.TabIndex = 29;
             this.button4.Text = "Supprimer";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(288, 364);
+            this.button3.Location = new System.Drawing.Point(377, 364);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(71, 28);
             this.button3.TabIndex = 28;
@@ -195,7 +237,7 @@ namespace pfe
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(451, 364);
+            this.button2.Location = new System.Drawing.Point(540, 364);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(70, 28);
@@ -206,7 +248,7 @@ namespace pfe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(364, 364);
+            this.button1.Location = new System.Drawing.Point(453, 364);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(70, 28);
@@ -287,49 +329,42 @@ namespace pfe
             this.label2.TabIndex = 15;
             this.label2.Text = "CIN ";
             // 
-            // Column1
+            // button5
             // 
-            this.Column1.HeaderText = "code client";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
+            this.button5.Location = new System.Drawing.Point(494, 399);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 40);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Consulter Factures";
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // Column2
+            // button6
             // 
-            this.Column2.HeaderText = "CIN ";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
+            this.button6.Location = new System.Drawing.Point(413, 399);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 40);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "Consulter Commandes";
+            this.button6.UseVisualStyleBackColor = true;
             // 
-            // Column3
+            // button10
             // 
-            this.Column3.HeaderText = "Raison Social";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "GSM";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "e-mail";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
+            this.button10.Location = new System.Drawing.Point(332, 399);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 40);
+            this.button10.TabIndex = 20;
+            this.button10.Text = "Consulter BL";
+            this.button10.UseVisualStyleBackColor = true;
             // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(898, 528);
+            this.ClientSize = new System.Drawing.Size(994, 536);
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Client";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "Client";
             this.Load += new System.EventHandler(this.Client_Load);
             this.tabControl1.ResumeLayout(false);
@@ -370,5 +405,8 @@ namespace pfe
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
+        private System.Windows.Forms.Button button10;
+        private System.Windows.Forms.Button button6;
+        private System.Windows.Forms.Button button5;
     }
 }

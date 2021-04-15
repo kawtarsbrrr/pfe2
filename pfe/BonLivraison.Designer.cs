@@ -170,6 +170,7 @@ namespace pfe
             this.button1.TabIndex = 39;
             this.button1.Text = "ajouter";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // textBox8
             // 
@@ -307,6 +308,7 @@ namespace pfe
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "BonLivraison";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "BonLivraison";
             this.Load += new System.EventHandler(this.BonLivraison_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
