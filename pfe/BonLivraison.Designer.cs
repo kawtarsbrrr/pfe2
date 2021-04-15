@@ -308,7 +308,7 @@ namespace pfe
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Name = "BonLivraison";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "BonLivraison";
             this.Load += new System.EventHandler(this.BonLivraison_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

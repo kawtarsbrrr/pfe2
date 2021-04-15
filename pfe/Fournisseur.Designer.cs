@@ -439,7 +439,7 @@ namespace pfe
             this.Controls.Add(this.tabControl1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Fournisseur";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fournisseur";
             this.Load += new System.EventHandler(this.Fournisseur_Load);
             this.tabControl1.ResumeLayout(false);
