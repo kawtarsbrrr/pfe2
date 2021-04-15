@@ -50,5 +50,10 @@ namespace pfe
             Article article = new Article();
             article.Show();
         }
+
+        private void MenuPrincipal_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -115,6 +115,7 @@ namespace pfe
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "MenuPrincipal";
             this.Text = "MenuPrincipal";
+            this.Load += new System.EventHandler(this.MenuPrincipal_Load);
             this.ResumeLayout(false);
 
         }
