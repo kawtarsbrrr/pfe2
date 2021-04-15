@@ -32,33 +32,29 @@ namespace pfe
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.dataGridClt = new System.Windows.Forms.DataGridView();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label8 = new System.Windows.Forms.Label();
             this.searchBoxClt = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
             this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.email_clt = new System.Windows.Forms.TextBox();
             this.tele_clt = new System.Windows.Forms.TextBox();
-            this.prenom_clt = new System.Windows.Forms.TextBox();
             this.nom_clt = new System.Windows.Forms.TextBox();
             this.cin_clt = new System.Windows.Forms.TextBox();
-            this.code_clt = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClt)).BeginInit();
@@ -100,7 +96,6 @@ namespace pfe
             this.Column1,
             this.Column2,
             this.Column3,
-            this.Column4,
             this.Column5,
             this.Column6});
             this.dataGridClt.Location = new System.Drawing.Point(154, 104);
@@ -108,48 +103,7 @@ namespace pfe
             this.dataGridClt.RowHeadersWidth = 51;
             this.dataGridClt.Size = new System.Drawing.Size(647, 289);
             this.dataGridClt.TabIndex = 17;
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "code client";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 125;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "CIN ";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 125;
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "nom";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 125;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "prenom";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 125;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "GSM";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 125;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "e-mail";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 125;
+            this.dataGridClt.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClt_CellDoubleClick);
             // 
             // label8
             // 
@@ -175,6 +129,7 @@ namespace pfe
             this.button7.TabIndex = 14;
             this.button7.Text = "chercher";
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // button8
             // 
@@ -184,6 +139,7 @@ namespace pfe
             this.button8.TabIndex = 13;
             this.button8.Text = "afficher tout les clients";
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
             // button9
             // 
@@ -193,6 +149,7 @@ namespace pfe
             this.button9.TabIndex = 12;
             this.button9.Text = "nouveau";
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
             // 
             // tabPage2
             // 
@@ -202,15 +159,12 @@ namespace pfe
             this.tabPage2.Controls.Add(this.button1);
             this.tabPage2.Controls.Add(this.email_clt);
             this.tabPage2.Controls.Add(this.tele_clt);
-            this.tabPage2.Controls.Add(this.prenom_clt);
             this.tabPage2.Controls.Add(this.nom_clt);
             this.tabPage2.Controls.Add(this.cin_clt);
-            this.tabPage2.Controls.Add(this.code_clt);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.label5);
             this.tabPage2.Controls.Add(this.label3);
             this.tabPage2.Controls.Add(this.label2);
-            this.tabPage2.Controls.Add(this.label1);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
@@ -219,6 +173,25 @@ namespace pfe
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(207, 364);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(75, 28);
+            this.button4.TabIndex = 29;
+            this.button4.Text = "Supprimer";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(288, 364);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(71, 28);
+            this.button3.TabIndex = 28;
+            this.button3.Text = "Modifier";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -229,6 +202,7 @@ namespace pfe
             this.button2.TabIndex = 27;
             this.button2.Text = "Fermer";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -243,7 +217,7 @@ namespace pfe
             // 
             // email_clt
             // 
-            this.email_clt.Location = new System.Drawing.Point(451, 323);
+            this.email_clt.Location = new System.Drawing.Point(451, 284);
             this.email_clt.Margin = new System.Windows.Forms.Padding(2);
             this.email_clt.Name = "email_clt";
             this.email_clt.Size = new System.Drawing.Size(92, 20);
@@ -251,19 +225,11 @@ namespace pfe
             // 
             // tele_clt
             // 
-            this.tele_clt.Location = new System.Drawing.Point(451, 284);
+            this.tele_clt.Location = new System.Drawing.Point(451, 242);
             this.tele_clt.Margin = new System.Windows.Forms.Padding(2);
             this.tele_clt.Name = "tele_clt";
             this.tele_clt.Size = new System.Drawing.Size(92, 20);
             this.tele_clt.TabIndex = 24;
-            // 
-            // prenom_clt
-            // 
-            this.prenom_clt.Location = new System.Drawing.Point(451, 241);
-            this.prenom_clt.Margin = new System.Windows.Forms.Padding(2);
-            this.prenom_clt.Name = "prenom_clt";
-            this.prenom_clt.Size = new System.Drawing.Size(92, 20);
-            this.prenom_clt.TabIndex = 23;
             // 
             // nom_clt
             // 
@@ -280,14 +246,6 @@ namespace pfe
             this.cin_clt.Name = "cin_clt";
             this.cin_clt.Size = new System.Drawing.Size(92, 20);
             this.cin_clt.TabIndex = 21;
-            // 
-            // code_clt
-            // 
-            this.code_clt.Location = new System.Drawing.Point(451, 110);
-            this.code_clt.Margin = new System.Windows.Forms.Padding(2);
-            this.code_clt.Name = "code_clt";
-            this.code_clt.Size = new System.Drawing.Size(92, 20);
-            this.code_clt.TabIndex = 20;
             // 
             // label6
             // 
@@ -329,33 +287,40 @@ namespace pfe
             this.label2.TabIndex = 15;
             this.label2.Text = "CIN ";
             // 
-            // label1
+            // Column1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(360, 112);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 13);
-            this.label1.TabIndex = 14;
-            this.label1.Text = "Code Client";
+            this.Column1.HeaderText = "code client";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 125;
             // 
-            // button3
+            // Column2
             // 
-            this.button3.Location = new System.Drawing.Point(288, 364);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(71, 28);
-            this.button3.TabIndex = 28;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
+            this.Column2.HeaderText = "CIN ";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 125;
             // 
-            // button4
+            // Column3
             // 
-            this.button4.Location = new System.Drawing.Point(207, 364);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 28);
-            this.button4.TabIndex = 29;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
+            this.Column3.HeaderText = "Raison Social";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 125;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "GSM";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 125;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "e-mail";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 125;
             // 
             // Client
             // 
@@ -382,12 +347,6 @@ namespace pfe
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGridClt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox searchBoxClt;
         private System.Windows.Forms.Button button7;
@@ -398,16 +357,18 @@ namespace pfe
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.TextBox email_clt;
         private System.Windows.Forms.TextBox tele_clt;
-        private System.Windows.Forms.TextBox prenom_clt;
         private System.Windows.Forms.TextBox nom_clt;
         private System.Windows.Forms.TextBox cin_clt;
-        private System.Windows.Forms.TextBox code_clt;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button4;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
     }
 }

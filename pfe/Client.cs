@@ -58,10 +58,28 @@ namespace pfe
         private void button9_Click(object sender, EventArgs e)
         {
             tabControl1.SelectedTab = tabPage2;
+            cin_clt.Text = "";
+            nom_clt.Text = "";
+            tele_clt.Text = "";
+            email_clt.Text = "";
+            button1.Enabled = true;
+            button3.Enabled = false;
+            button4.Enabled = false;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
+            tabControl1.SelectedTab = tabPage1;
+            dataGridClt.Rows.Clear();
+            ado.cmd.CommandText = "select * from client";
+            ado.cmd.Connection = ado.cn;
+            ado.dr = ado.cmd.ExecuteReader();
+            while (ado.dr.Read())
+            {
+                dataGridClt.Rows.Add(ado.dr.GetValue(0).ToString(), ado.dr.GetValue(2).ToString(),
+                    ado.dr.GetValue(3).ToString(), ado.dr.GetValue(4).ToString(), ado.dr.GetValue(5).ToString());
+            }//gets input from the searchbox and matches it to the database then prints the matched data in the datagrid
+            ado.dr.Close();//closes the reader
         }
 
         private int currentClt = 0;
@@ -93,7 +111,7 @@ namespace pfe
                 MessageBox.Show("remplir tout les champs svp");
                 return;
             }//making sure no input box is empty, gotta be full :)
-            ado.cmd.CommandText = "insert into client(code_clt,cin_clt, nom_clt,prenom_clt,tele_clt,email_clt) " +
+            ado.cmd.CommandText = "insert into client(cin_clt, nom_clt,tele_clt,email_clt) " +
                 "values (" + cin_clt.Text + "','" + nom_clt.Text + "','" +
                 tele_clt.Text + "','" + email_clt.Text + "')";
             ado.cmd.Connection = ado.cn;
@@ -108,5 +126,21 @@ namespace pfe
             //clearing textboxes for new entry
         }
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (cin_clt.Text == "" || nom_clt.Text == "" || tele_clt.Text == "" || email_clt.Text == "")
+            {
+                MessageBox.Show("remplir tout les champs svp");
+                return;
+            }//making sure no input box is empty, gotta be full :)
+            ado.cmd.CommandText = "update client set cin_clt = '" + cin_clt.Text + "', raisonsocial = '" + nom_clt.Text + "', tele_clt = '" + tele_clt.Text + "', email_clt = '" + email_clt.Text + "' where code_clt = " + currentClt;
+            //"insert into client(cin_clt, nom_clt,tele_clt,email_clt) " +
+            //    "values (" + cin_clt.Text + "','" + nom_clt.Text + "','" +
+            //    tele_clt.Text + "','" + email_clt.Text + "')";
+            ado.cmd.Connection = ado.cn;
+            ado.cmd.ExecuteNonQuery(); //adding new data to database
+
+            MessageBox.Show("done");
+        }
     }
 }
