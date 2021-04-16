@@ -7,7 +7,6 @@ C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\zxing.xml
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\zxing.presentation.xml
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.csprojAssemblyReference.cache
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.Article.resources
-C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.BonLivraison.resources
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.Client.resources
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.Fournisseur.resources
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.Login.resources
@@ -50,3 +49,4 @@ C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AForge.Video.dll
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AForge.xml
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AForge.Video.xml
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AForge.Video.DirectShow.xml
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.Commandes.resources

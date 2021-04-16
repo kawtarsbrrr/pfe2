@@ -1,7 +1,7 @@
 ﻿
 namespace pfe
 {
-    partial class BonLivraison
+    partial class Commandes
     {
         /// <summary>
         /// Required designer variable.
@@ -66,6 +66,7 @@ namespace pfe
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 48;
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // comboBox1
             // 
@@ -74,6 +75,7 @@ namespace pfe
             this.comboBox1.Name = "comboBox1";
             this.comboBox1.Size = new System.Drawing.Size(121, 21);
             this.comboBox1.TabIndex = 47;
+            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // dateTimePicker1
             // 
@@ -96,6 +98,7 @@ namespace pfe
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(443, 179);
             this.dataGridView1.TabIndex = 45;
+            this.dataGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellDoubleClick);
             // 
             // Column1
             // 
@@ -125,6 +128,7 @@ namespace pfe
             this.button4.TabIndex = 44;
             this.button4.Text = "fermer";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // button5
             // 
@@ -134,6 +138,7 @@ namespace pfe
             this.button5.TabIndex = 43;
             this.button5.Text = "annuler";
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // button6
             // 
@@ -143,6 +148,7 @@ namespace pfe
             this.button6.TabIndex = 42;
             this.button6.Text = "valider";
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
             // 
             // button3
             // 
@@ -152,6 +158,7 @@ namespace pfe
             this.button3.TabIndex = 41;
             this.button3.Text = "vider";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button2
             // 
@@ -161,6 +168,7 @@ namespace pfe
             this.button2.TabIndex = 40;
             this.button2.Text = "supprimer";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button1
             // 
@@ -279,7 +287,7 @@ namespace pfe
             this.label1.TabIndex = 26;
             this.label1.Text = "raison social";
             // 
-            // BonLivraison
+            // Commandes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -307,9 +315,9 @@ namespace pfe
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "BonLivraison";
+            this.Name = "Commandes";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "BonLivraison";
+            this.Text = "Commandes";
             this.Load += new System.EventHandler(this.BonLivraison_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);

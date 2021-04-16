@@ -13,11 +13,11 @@ namespace pfe
 
         private void button6_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms.OfType<BonLivraison>().Count() == 1)
+            if (Application.OpenForms.OfType<Commandes>().Count() == 1)
             {
-                Application.OpenForms.OfType<BonLivraison>().First().Close();
+                Application.OpenForms.OfType<Commandes>().First().Close();
             }
-            BonLivraison bonLivraison = new BonLivraison();
+            Commandes bonLivraison = new Commandes();
             bonLivraison.Show();
         }
 
