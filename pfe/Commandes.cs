@@ -165,7 +165,7 @@ namespace pfe
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();
 
-                ado.cmd.CommandText = "insert into ligne_cmnd_clt(ref_art, idf_bl, qte_commande) values (" + int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString())
+                ado.cmd.CommandText = "insert into ligne_cmnd_clt(ref_art, idf_cmnd, qte_commande) values (" + int.Parse(dataGridView1.Rows[i].Cells[0].Value.ToString())
                                         + "," + lastCMND + ", " + int.Parse(dataGridView1.Rows[i].Cells[2].Value.ToString()) + ")";
                 ado.cmd.Connection = ado.cn;
                 ado.cmd.ExecuteNonQuery();

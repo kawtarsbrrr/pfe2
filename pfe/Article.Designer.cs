@@ -79,7 +79,6 @@ namespace pfe
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.textBox9 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
@@ -87,8 +86,8 @@ namespace pfe
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -418,6 +417,7 @@ namespace pfe
             // 
             // tabPage3
             // 
+            this.tabPage3.Controls.Add(this.textBox1);
             this.tabPage3.Controls.Add(this.comboBox3);
             this.tabPage3.Controls.Add(this.comboBox2);
             this.tabPage3.Controls.Add(this.label19);
@@ -434,7 +434,6 @@ namespace pfe
             this.tabPage3.Controls.Add(this.label13);
             this.tabPage3.Controls.Add(this.label12);
             this.tabPage3.Controls.Add(this.label11);
-            this.tabPage3.Controls.Add(this.label10);
             this.tabPage3.Controls.Add(this.label9);
             this.tabPage3.Controls.Add(this.textBox9);
             this.tabPage3.Controls.Add(this.textBox8);
@@ -442,7 +441,6 @@ namespace pfe
             this.tabPage3.Controls.Add(this.textBox6);
             this.tabPage3.Controls.Add(this.textBox5);
             this.tabPage3.Controls.Add(this.textBox4);
-            this.tabPage3.Controls.Add(this.textBox3);
             this.tabPage3.Location = new System.Drawing.Point(4, 22);
             this.tabPage3.Name = "tabPage3";
             this.tabPage3.Size = new System.Drawing.Size(964, 488);
@@ -457,6 +455,7 @@ namespace pfe
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(121, 21);
             this.comboBox3.TabIndex = 74;
+            this.comboBox3.SelectedIndexChanged += new System.EventHandler(this.comboBox3_SelectedIndexChanged);
             // 
             // comboBox2
             // 
@@ -595,15 +594,6 @@ namespace pfe
             this.label11.TabIndex = 59;
             this.label11.Text = "ref article";
             // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(251, 133);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(49, 13);
-            this.label10.TabIndex = 58;
-            this.label10.Text = "numligne";
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -655,16 +645,16 @@ namespace pfe
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 51;
             // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(331, 130);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 50;
-            // 
             // timer1
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(458, 105);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 75;
             // 
             // Article
             // 
@@ -742,7 +732,6 @@ namespace pfe
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox textBox9;
         private System.Windows.Forms.TextBox textBox8;
@@ -750,6 +739,6 @@ namespace pfe
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

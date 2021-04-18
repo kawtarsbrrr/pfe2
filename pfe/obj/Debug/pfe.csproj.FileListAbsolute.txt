@@ -50,3 +50,6 @@ C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AForge.xml
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AForge.Video.xml
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AForge.Video.DirectShow.xml
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.Commandes.resources
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.sousformBL.resources
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.sousformeCommandeClt.resources
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.sousformFactureClient.resources

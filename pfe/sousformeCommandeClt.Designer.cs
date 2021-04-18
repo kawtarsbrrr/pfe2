@@ -48,7 +48,9 @@ namespace pfe
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.dataGridView1);
             this.Name = "sousformeCommandeClt";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "sousformeCommandeClt";
+            this.Load += new System.EventHandler(this.sousformeCommandeClt_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

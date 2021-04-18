@@ -43,11 +43,11 @@ namespace pfe
 
         private void button3_Click(object sender, EventArgs e)
         {
-            if (Application.OpenForms.OfType<sousformFactureClient>().Count() == 1)
+            if (Application.OpenForms.OfType<Article>().Count() == 1)
             {
-                Application.OpenForms.OfType<sousformFactureClient>().First().Close();
+                Application.OpenForms.OfType<Article>().First().Close();
             }
-            sousformFactureClient article = new sousformFactureClient();
+            Article article = new Article();
             article.Show();
         }
 

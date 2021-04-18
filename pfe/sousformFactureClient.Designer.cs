@@ -49,6 +49,7 @@ namespace pfe
             this.Controls.Add(this.dataGridView1);
             this.Name = "sousformFactureClient";
             this.Text = "sousformFactureClient";
+            this.Load += new System.EventHandler(this.sousformFactureClient_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
             this.ResumeLayout(false);
 

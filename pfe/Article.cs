@@ -172,27 +172,24 @@ namespace pfe
 
         private void button12_Click(object sender, EventArgs e)
         {
-            if (textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" ||
+            if (textBox4.Text == "" || textBox5.Text == "" ||
                    textBox6.Text == "" || textBox7.Text == "" ||
-                   textBox8.Text == "" || textBox9.Text == "" || textBox11.Text == "")
+                   textBox8.Text == "" || textBox9.Text == "" || textBox11.Text == "" || textBox1.Text == "")
             {
                 MessageBox.Show("empty textboxes");
                 return;
             }
-            ado.cmd.CommandText = "insert into facture_frs(idf_frs,idf_fac_frs, date_fac_frs) " +
-                      "values (" + int.Parse(comboBox2.Text) + "," + int.Parse(comboBox3.Text) + ",'" + dateTimePicker1.Text + "')";
+            ado.cmd.CommandText = "insert into facture_frs(idf_frs,idf_fac_frs, date_fac_frs) values (" + int.Parse(comboBox2.Text) + "," + int.Parse(textBox1.Text) + ",'" +dateTimePicker1.Text + "')";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
 
-            ado.cmd.CommandText = "insert into article(ref_art,idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA) " +
-                                  "values (" + int.Parse(textBox4.Text) + "," + int.Parse(textBox8.Text) + ",'" + textBox9.Text + "'," + int.Parse(textBox6.Text)
+            ado.cmd.CommandText = "insert into article(ref_art,idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA) values (" + int.Parse(textBox4.Text) + "," + int.Parse(textBox8.Text) + ",'" + textBox9.Text + "'," + int.Parse(textBox6.Text)
                                   + "," + float.Parse(textBox7.Text)
                                   + "," + float.Parse(textBox11.Text) + ")";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
 
-            ado.cmd.CommandText = "insert into ligne_fac_frs(ref_art,idf_fac_frs, qte_achete,prix_achat) " +
-                                  "values (" + int.Parse(textBox4.Text) + "," + int.Parse(comboBox3.Text) +
+            ado.cmd.CommandText = "insert into ligne_fac_frs(ref_art,idf_fac_frs, qte_achete,prix_achat) values (" + int.Parse(textBox4.Text) + "," + int.Parse(comboBox3.Text) +
                                   "," + int.Parse(textBox6.Text) + "," + float.Parse(textBox5.Text) + ")";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
@@ -200,26 +197,28 @@ namespace pfe
 
         private void button11_Click_1(object sender, EventArgs e)
         {
-            if (textBox3.Text == "" || textBox4.Text == "" || textBox5.Text == "" ||
+            if (textBox4.Text == "" || textBox5.Text == "" ||
                textBox6.Text == "" || textBox7.Text == "" ||
                textBox8.Text == "" || textBox9.Text == "" || textBox11.Text == "")
             {
                 MessageBox.Show("empty textboxes");
                 return;
             }
-            ado.cmd.CommandText = "insert into article(ref_art,idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA) " +
-                                  "values (" + int.Parse(textBox4.Text) + "," + int.Parse(textBox8.Text) + ",'"
+            ado.cmd.CommandText = "insert into article(ref_art,idf_rayon,design_art,qte_stock,prix_ht_stock,taux_TVA) values (" + int.Parse(textBox4.Text) + "," + int.Parse(textBox8.Text) + ",'"
                                   + textBox9.Text + "'," + int.Parse(textBox6.Text)
                                   + "," + float.Parse(textBox7.Text)
                                   + "," + float.Parse(textBox11.Text) + ")";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
 
-            ado.cmd.CommandText = "insert into ligne_fac_frs(ref_art,idf_fac_frs, qte_achete,prix_achat) " +
-                                  "values (" + int.Parse(textBox4.Text) + "," + int.Parse(comboBox3.Text) +
+            ado.cmd.CommandText = "insert into ligne_fac_frs(ref_art,idf_fac_frs, qte_achete,prix_achat) values (" + int.Parse(textBox4.Text) + "," + int.Parse(comboBox3.Text) +
                                   "," + int.Parse(textBox6.Text) + "," + float.Parse(textBox5.Text) + ")";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
+        }
+
+        private void comboBox3_SelectedIndexChanged(object sender, EventArgs e)
+        {
         }
     }
 }

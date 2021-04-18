@@ -16,5 +16,10 @@ namespace pfe
         {
             InitializeComponent();
         }
+        private connection ado = new connection();
+        private void sousformFactureClient_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
