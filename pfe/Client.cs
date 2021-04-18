@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace pfe
@@ -149,6 +150,35 @@ namespace pfe
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
             MessageBox.Show("suppression faite");
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<sousformFactureClient>().Count() == 1)
+            {
+                Application.OpenForms.OfType<sousformFactureClient>().First().Close();
+            }
+            sousformFactureClient sousform1 = new sousformFactureClient();
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<sousformBL>().Count() == 1)
+            {
+                Application.OpenForms.OfType<sousformBL>().First().Close();
+            }
+            sousformBL sousform2 = new sousformBL();
+            sousform2.Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (Application.OpenForms.OfType<sousformeCommandeClt>().Count() == 1)
+            {
+                Application.OpenForms.OfType<sousformeCommandeClt>().First().Close();
+            }
+            sousformeCommandeClt sousform3 = new sousformeCommandeClt();
+            sousform3.Show();
         }
     }
 }

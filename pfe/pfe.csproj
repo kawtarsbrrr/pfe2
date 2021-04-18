@@ -100,6 +100,24 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sousformBL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sousformBL.Designer.cs">
+      <DependentUpon>sousformBL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sousformeCommandeClt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sousformeCommandeClt.Designer.cs">
+      <DependentUpon>sousformeCommandeClt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sousformFactureClient.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sousformFactureClient.Designer.cs">
+      <DependentUpon>sousformFactureClient.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Article.resx">
       <DependentUpon>Article.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,6 +145,15 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="sousformBL.resx">
+      <DependentUpon>sousformBL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sousformeCommandeClt.resx">
+      <DependentUpon>sousformeCommandeClt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sousformFactureClient.resx">
+      <DependentUpon>sousformFactureClient.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

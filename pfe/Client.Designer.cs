@@ -31,6 +31,9 @@ namespace pfe
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button6 = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
             this.dataGridClt = new System.Windows.Forms.DataGridView();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -55,9 +58,6 @@ namespace pfe
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClt)).BeginInit();
@@ -94,6 +94,36 @@ namespace pfe
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "tabPage1";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button10
+            // 
+            this.button10.Location = new System.Drawing.Point(332, 399);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(75, 40);
+            this.button10.TabIndex = 20;
+            this.button10.Text = "Consulter BL";
+            this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.button10_Click);
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(413, 399);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(75, 40);
+            this.button6.TabIndex = 19;
+            this.button6.Text = "Consulter Commandes";
+            this.button6.UseVisualStyleBackColor = true;
+            this.button6.Click += new System.EventHandler(this.button6_Click);
+            // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(494, 399);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(75, 40);
+            this.button5.TabIndex = 18;
+            this.button5.Text = "Consulter Factures";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
             // 
             // dataGridClt
             // 
@@ -210,7 +240,7 @@ namespace pfe
             this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
-            this.tabPage2.Size = new System.Drawing.Size(900, 500);
+            this.tabPage2.Size = new System.Drawing.Size(964, 488);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "tabPage2";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -328,33 +358,6 @@ namespace pfe
             this.label2.Size = new System.Drawing.Size(28, 13);
             this.label2.TabIndex = 15;
             this.label2.Text = "CIN ";
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(494, 399);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 40);
-            this.button5.TabIndex = 18;
-            this.button5.Text = "Consulter Factures";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(413, 399);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(75, 40);
-            this.button6.TabIndex = 19;
-            this.button6.Text = "Consulter Commandes";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button10
-            // 
-            this.button10.Location = new System.Drawing.Point(332, 399);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(75, 40);
-            this.button10.TabIndex = 20;
-            this.button10.Text = "Consulter BL";
-            this.button10.UseVisualStyleBackColor = true;
             // 
             // Client
             // 
