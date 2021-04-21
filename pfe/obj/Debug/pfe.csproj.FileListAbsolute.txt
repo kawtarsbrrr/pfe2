@@ -69,3 +69,7 @@ C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\CrystalDecisions.Repo
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\CrystalDecisions.ReportAppServer.ObjectFactory.dll
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\CrystalDecisions.ReportAppServer.CommonControls.dll
 C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\stdole.dll
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\obj\Debug\pfe.Reports.Viewer.resources
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\AxShockwaveFlashObjects.dll
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\CrystalDecisions.Windows.Forms.dll
+C:\Users\HELLO\Source\Repos\kawtarsbrrr\pfe2\pfe\bin\Debug\ShockwaveFlashObjects.dll

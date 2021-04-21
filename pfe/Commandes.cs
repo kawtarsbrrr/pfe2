@@ -71,13 +71,14 @@ namespace pfe
 
         private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
         {
-            ado.cmd.CommandText = "select design_art, qte_stock from Article where ref_art = " + int.Parse(comboBox2.Text);
+            ado.cmd.CommandText = "select design_art, qte_stock, prix_ht_stock from Article where ref_art = " + int.Parse(comboBox2.Text);
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
             {
                 textBox5.Text = ado.dr["design_art"].ToString();
                 textBox6.Text = ado.dr["qte_stock"].ToString();
+                textBox8.Text = ado.dr["prix_ht_stock"].ToString();
             }
             ado.dr.Close();
         }
@@ -126,6 +127,19 @@ namespace pfe
 
         private void button6_Click(object sender, EventArgs e)
         {
+            double pht = 0;
+            double sum1 = 0;
+
+            for (int count = 0; count < dataGridView1.Rows.Count; count++)
+            {
+                pht = Convert.ToDouble(dataGridView1.Rows[count].Cells["Column4"].Value) * Convert.ToDouble(dataGridView1.Rows[count].Cells["Column3"].Value);
+                sum1 += pht;
+            }
+            //textBox5.Text = sum1.ToString();
+            double sum2 = sum1 * 0.2;
+            //textBox6.Text = sum2.ToString();
+            double totalttc = sum1 + sum2;
+
             ado.cmd.CommandText = "insert into commande(code_clt, date_cmnd) values(" + int.Parse(textBox2.Text) + ", '" + dateTimePicker1.Text + "')";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
@@ -141,7 +155,7 @@ namespace pfe
             ado.dr.Close();
 
             // MessageBox.Show(dateTimePicker1.Text);
-            ado.cmd.CommandText = "insert into bon_livraison(idf_cmnd, date_liv) values (" + lastCMND + ", '" + dateTimePicker1.Text + "')";
+            ado.cmd.CommandText = "insert into bon_livraison(idf_cmnd, date_liv, total_pht_bl, montant_tva_bl, taux_tva_bl, total_ttc_bl) values (" + lastCMND + ", '" + dateTimePicker1.Text + "' , " + sum1 + "," + sum2 + "," + 20 + "," + totalttc + ")";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery();
 

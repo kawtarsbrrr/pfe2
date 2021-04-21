@@ -6,6 +6,7 @@ namespace pfe
 {
     public partial class Client : Form
     {
+        public int numClient = 0;
         private connection ado = new connection();
 
         public Client()
@@ -112,8 +113,8 @@ namespace pfe
                 MessageBox.Show("remplir tout les champs svp");
                 return;
             }//making sure no input box is empty, gotta be full :)
-            ado.cmd.CommandText = "insert into client(cin_clt, nom_clt,tele_clt,email_clt) " +
-                "values (" + cin_clt.Text + "','" + nom_clt.Text + "','" +
+            ado.cmd.CommandText = "insert into client(cin_clt, raisonsocial,tele_clt,email_clt) " +
+                "values ('" + cin_clt.Text + "','" + nom_clt.Text + "','" +
                 tele_clt.Text + "','" + email_clt.Text + "')";
             ado.cmd.Connection = ado.cn;
             ado.cmd.ExecuteNonQuery(); //adding new data to database
@@ -179,6 +180,12 @@ namespace pfe
             }
             sousformeCommandeClt sousform3 = new sousformeCommandeClt();
             sousform3.Show();
+        }
+
+        private void dataGridClt_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            ClientStuff.client = Convert.ToInt32(dataGridClt.Rows[e.RowIndex].Cells[0].Value);
+            //MessageBox.Show(ClientStuff.client.ToString());
         }
     }
 }

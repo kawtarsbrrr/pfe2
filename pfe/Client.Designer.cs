@@ -139,6 +139,7 @@ namespace pfe
             this.dataGridClt.RowHeadersWidth = 51;
             this.dataGridClt.Size = new System.Drawing.Size(647, 289);
             this.dataGridClt.TabIndex = 17;
+            this.dataGridClt.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClt_CellClick);
             this.dataGridClt.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridClt_CellDoubleClick);
             // 
             // Column1
