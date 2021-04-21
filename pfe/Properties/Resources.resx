@@ -118,31 +118,7 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="8994_gg_tom" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\8994_gg_tom.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-battery-charger-computer-icons-ac-power-plugs-and-plug-5adf8fbc3243f6.0154890115246007642059" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-battery-charger-computer-icons-ac-power-plugs-and-plug-5adf8fbc3243f6.0154890115246007642059.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="9951_jerryshock" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\9951_jerryshock.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-laptop-desktop-computers-black-and-white-clip-art-space-computer-cliparts-5aac463b354127.3852685215212396112181" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-laptop-desktop-computers-black-and-white-clip-art-space-computer-cliparts-5aac463b354127.3852685215212396112181.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5a1cacc4b377b5.8672965215118286767351" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5a1cacc4b377b5.8672965215118286767351.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-arrow-button-icon-right-arrow-transparent-background-5a77bc2a82ed16.7252492515177963945363" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-arrow-button-icon-right-arrow-transparent-background-5a77bc2a82ed16.7252492515177963945363.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="test logo" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\test logo.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="5a364b44ee59c3.0140575715135076529763" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\5a364b44ee59c3.0140575715135076529763.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="kisspng-font-awesome-arrow-computer-icons-angle-left-arrow-5ac395fd2d74d6.5382900015227673571862" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\kisspng-font-awesome-arrow-computer-icons-angle-left-arrow-5ac395fd2d74d6.5382900015227673571862.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

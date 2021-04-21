@@ -42,7 +42,7 @@ namespace pfe
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(362, 255);
+            this.label1.Location = new System.Drawing.Point(364, 271);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(84, 13);
@@ -52,7 +52,7 @@ namespace pfe
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(375, 301);
+            this.label2.Location = new System.Drawing.Point(377, 317);
             this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(71, 13);
@@ -61,7 +61,7 @@ namespace pfe
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(450, 252);
+            this.textBox1.Location = new System.Drawing.Point(452, 268);
             this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(101, 20);
@@ -69,7 +69,7 @@ namespace pfe
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(450, 298);
+            this.textBox2.Location = new System.Drawing.Point(452, 314);
             this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.PasswordChar = '*';
@@ -78,7 +78,7 @@ namespace pfe
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(369, 362);
+            this.button1.Location = new System.Drawing.Point(371, 378);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(77, 38);
@@ -89,7 +89,7 @@ namespace pfe
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(490, 362);
+            this.button2.Location = new System.Drawing.Point(492, 378);
             this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(77, 38);
@@ -100,9 +100,10 @@ namespace pfe
             // pictureBox1
             // 
             this.pictureBox1.Image = global::pfe.Properties.Resources.test_logo;
-            this.pictureBox1.Location = new System.Drawing.Point(233, 12);
+            this.pictureBox1.Location = new System.Drawing.Point(231, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(500, 200);
+            this.pictureBox1.Size = new System.Drawing.Size(498, 237);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 

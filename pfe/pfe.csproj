@@ -103,6 +103,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="sousformBL.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -141,14 +146,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="sousformBL.resx">
       <DependentUpon>sousformBL.cs</DependentUpon>
     </EmbeddedResource>
@@ -173,34 +173,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\9951_jerryshock.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\8994_gg_tom.gif" />
-  </ItemGroup>
-  <ItemGroup>
     <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\test logo.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kisspng-battery-charger-computer-icons-ac-power-plugs-and-plug-5adf8fbc3243f6.0154890115246007642059.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5a364b44ee59c3.0140575715135076529763.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kisspng-laptop-desktop-computers-black-and-white-clip-art-space-computer-cliparts-5aac463b354127.3852685215212396112181.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\5a1cacc4b377b5.8672965215118286767351.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kisspng-arrow-button-icon-right-arrow-transparent-background-5a77bc2a82ed16.7252492515177963945363.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\kisspng-font-awesome-arrow-computer-icons-angle-left-arrow-5ac395fd2d74d6.5382900015227673571862.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
