@@ -92,7 +92,7 @@ namespace pfe
             this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage1.Size = new System.Drawing.Size(964, 488);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "liste";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // button10
@@ -242,7 +242,7 @@ namespace pfe
             this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(964, 488);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "ajout";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button4

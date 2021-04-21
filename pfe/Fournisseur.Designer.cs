@@ -78,7 +78,7 @@ namespace pfe
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
             this.tabControl1.Location = new System.Drawing.Point(11, 11);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(972, 514);
@@ -93,12 +93,12 @@ namespace pfe
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.button4);
             this.tabPage1.Location = new System.Drawing.Point(4, 22);
-            this.tabPage1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabPage1.Size = new System.Drawing.Size(829, 501);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(2);
+            this.tabPage1.Size = new System.Drawing.Size(964, 488);
             this.tabPage1.TabIndex = 0;
-            this.tabPage1.Text = "tabPage1";
+            this.tabPage1.Text = "liste";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // dataGridFrs
@@ -114,7 +114,7 @@ namespace pfe
             this.column7,
             this.column8,
             this.column9});
-            this.dataGridFrs.Location = new System.Drawing.Point(32, 56);
+            this.dataGridFrs.Location = new System.Drawing.Point(83, 70);
             this.dataGridFrs.Name = "dataGridFrs";
             this.dataGridFrs.RowHeadersWidth = 51;
             this.dataGridFrs.Size = new System.Drawing.Size(756, 289);
@@ -188,7 +188,7 @@ namespace pfe
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(47, 25);
+            this.label7.Location = new System.Drawing.Point(98, 39);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(72, 13);
             this.label7.TabIndex = 10;
@@ -196,14 +196,14 @@ namespace pfe
             // 
             // searchBoxFrs
             // 
-            this.searchBoxFrs.Location = new System.Drawing.Point(124, 25);
+            this.searchBoxFrs.Location = new System.Drawing.Point(175, 39);
             this.searchBoxFrs.Name = "searchBoxFrs";
             this.searchBoxFrs.Size = new System.Drawing.Size(100, 20);
             this.searchBoxFrs.TabIndex = 9;
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(229, 20);
+            this.button6.Location = new System.Drawing.Point(280, 34);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 23);
             this.button6.TabIndex = 8;
@@ -213,7 +213,7 @@ namespace pfe
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(539, 352);
+            this.button5.Location = new System.Drawing.Point(590, 366);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 40);
             this.button5.TabIndex = 7;
@@ -223,7 +223,7 @@ namespace pfe
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(677, 352);
+            this.button4.Location = new System.Drawing.Point(728, 366);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 40);
             this.button4.TabIndex = 6;
@@ -254,12 +254,12 @@ namespace pfe
             this.tabPage2.Controls.Add(this.raison_social);
             this.tabPage2.Controls.Add(this.ICE);
             this.tabPage2.Location = new System.Drawing.Point(4, 22);
-            this.tabPage2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(2);
             this.tabPage2.Size = new System.Drawing.Size(964, 488);
             this.tabPage2.TabIndex = 1;
-            this.tabPage2.Text = "tabPage2";
+            this.tabPage2.Text = "ajout";
             this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // button7
@@ -437,7 +437,7 @@ namespace pfe
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(994, 536);
             this.Controls.Add(this.tabControl1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Fournisseur";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Fournisseur";
