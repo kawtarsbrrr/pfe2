@@ -67,6 +67,8 @@ namespace pfe
             this.tele_frs = new System.Windows.Forms.TextBox();
             this.raison_social = new System.Windows.Forms.TextBox();
             this.ICE = new System.Windows.Forms.TextBox();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridFrs)).BeginInit();
@@ -86,6 +88,8 @@ namespace pfe
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button9);
+            this.tabPage1.Controls.Add(this.button8);
             this.tabPage1.Controls.Add(this.dataGridFrs);
             this.tabPage1.Controls.Add(this.label7);
             this.tabPage1.Controls.Add(this.searchBoxFrs);
@@ -196,7 +200,7 @@ namespace pfe
             // 
             // searchBoxFrs
             // 
-            this.searchBoxFrs.Location = new System.Drawing.Point(175, 39);
+            this.searchBoxFrs.Location = new System.Drawing.Point(174, 36);
             this.searchBoxFrs.Name = "searchBoxFrs";
             this.searchBoxFrs.Size = new System.Drawing.Size(100, 20);
             this.searchBoxFrs.TabIndex = 9;
@@ -213,7 +217,7 @@ namespace pfe
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(590, 366);
+            this.button5.Location = new System.Drawing.Point(83, 365);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 40);
             this.button5.TabIndex = 7;
@@ -223,7 +227,7 @@ namespace pfe
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(728, 366);
+            this.button4.Location = new System.Drawing.Point(221, 365);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(75, 40);
             this.button4.TabIndex = 6;
@@ -431,6 +435,26 @@ namespace pfe
             this.ICE.Size = new System.Drawing.Size(100, 20);
             this.ICE.TabIndex = 22;
             // 
+            // button8
+            // 
+            this.button8.Location = new System.Drawing.Point(683, 365);
+            this.button8.Name = "button8";
+            this.button8.Size = new System.Drawing.Size(75, 40);
+            this.button8.TabIndex = 12;
+            this.button8.Text = "Fermer";
+            this.button8.UseVisualStyleBackColor = true;
+            this.button8.Click += new System.EventHandler(this.button8_Click);
+            // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(764, 365);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(75, 40);
+            this.button9.TabIndex = 13;
+            this.button9.Text = "Quitter";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Fournisseur
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -492,5 +516,7 @@ namespace pfe
         private System.Windows.Forms.DataGridViewTextBoxColumn column9;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button button8;
     }
 }

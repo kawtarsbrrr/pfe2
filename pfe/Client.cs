@@ -160,6 +160,7 @@ namespace pfe
                 Application.OpenForms.OfType<sousformFactureClient>().First().Close();
             }
             sousformFactureClient sousform1 = new sousformFactureClient();
+            sousform1.ShowDialog();
         }
 
         private void button10_Click(object sender, EventArgs e)
@@ -169,7 +170,7 @@ namespace pfe
                 Application.OpenForms.OfType<sousformBL>().First().Close();
             }
             sousformBL sousform2 = new sousformBL();
-            sousform2.Show();
+            sousform2.ShowDialog();
         }
 
         private void button6_Click(object sender, EventArgs e)
@@ -179,13 +180,23 @@ namespace pfe
                 Application.OpenForms.OfType<sousformeCommandeClt>().First().Close();
             }
             sousformeCommandeClt sousform3 = new sousformeCommandeClt();
-            sousform3.Show();
+            sousform3.ShowDialog();
         }
 
         private void dataGridClt_CellClick(object sender, DataGridViewCellEventArgs e)
         {
             ClientStuff.client = Convert.ToInt32(dataGridClt.Rows[e.RowIndex].Cells[0].Value);
             //MessageBox.Show(ClientStuff.client.ToString());
+        }
+
+        private void button11_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

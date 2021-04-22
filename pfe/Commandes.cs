@@ -200,5 +200,10 @@ namespace pfe
                 ado.cmd.ExecuteNonQuery();
             }
         }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

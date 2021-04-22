@@ -58,6 +58,8 @@ namespace pfe
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.button11 = new System.Windows.Forms.Button();
+            this.button12 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClt)).BeginInit();
@@ -77,6 +79,8 @@ namespace pfe
             // 
             // tabPage1
             // 
+            this.tabPage1.Controls.Add(this.button12);
+            this.tabPage1.Controls.Add(this.button11);
             this.tabPage1.Controls.Add(this.button10);
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button5);
@@ -97,7 +101,7 @@ namespace pfe
             // 
             // button10
             // 
-            this.button10.Location = new System.Drawing.Point(332, 399);
+            this.button10.Location = new System.Drawing.Point(153, 399);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(75, 40);
             this.button10.TabIndex = 20;
@@ -107,7 +111,7 @@ namespace pfe
             // 
             // button6
             // 
-            this.button6.Location = new System.Drawing.Point(413, 399);
+            this.button6.Location = new System.Drawing.Point(234, 399);
             this.button6.Name = "button6";
             this.button6.Size = new System.Drawing.Size(75, 40);
             this.button6.TabIndex = 19;
@@ -117,7 +121,7 @@ namespace pfe
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(494, 399);
+            this.button5.Location = new System.Drawing.Point(315, 399);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 40);
             this.button5.TabIndex = 18;
@@ -205,7 +209,7 @@ namespace pfe
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(575, 399);
+            this.button8.Location = new System.Drawing.Point(396, 399);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(132, 40);
             this.button8.TabIndex = 13;
@@ -215,7 +219,7 @@ namespace pfe
             // 
             // button9
             // 
-            this.button9.Location = new System.Drawing.Point(713, 399);
+            this.button9.Location = new System.Drawing.Point(534, 399);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(75, 40);
             this.button9.TabIndex = 12;
@@ -360,6 +364,26 @@ namespace pfe
             this.label2.TabIndex = 15;
             this.label2.Text = "CIN ";
             // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(645, 399);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 40);
+            this.button11.TabIndex = 21;
+            this.button11.Text = "Fermer";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(726, 399);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 40);
+            this.button12.TabIndex = 22;
+            this.button12.Text = "Quitter";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -412,5 +436,7 @@ namespace pfe
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button button12;
+        private System.Windows.Forms.Button button11;
     }
 }

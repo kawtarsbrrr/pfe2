@@ -18,7 +18,7 @@ namespace pfe
                 Application.OpenForms.OfType<Commandes>().First().Close();
             }
             Commandes bonLivraison = new Commandes();
-            bonLivraison.Show();
+            bonLivraison.ShowDialog();
         }
 
         private void button5_Click(object sender, EventArgs e)
@@ -28,7 +28,7 @@ namespace pfe
                 Application.OpenForms.OfType<Fournisseur>().First().Close();
             }
             Fournisseur fournisseur = new Fournisseur();
-            fournisseur.Show();
+            fournisseur.ShowDialog();
         }
 
         private void button4_Click(object sender, EventArgs e)
@@ -38,7 +38,7 @@ namespace pfe
                 Application.OpenForms.OfType<Client>().First().Close();
             }
             Client client = new Client();
-            client.Show();
+            client.ShowDialog();
         }
 
         private void button3_Click(object sender, EventArgs e)
@@ -48,7 +48,7 @@ namespace pfe
                 Application.OpenForms.OfType<Article>().First().Close();
             }
             Article article = new Article();
-            article.Show();
+            article.ShowDialog();
         }
 
         private void MenuPrincipal_Load(object sender, EventArgs e)
