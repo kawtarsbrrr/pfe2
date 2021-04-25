@@ -77,9 +77,15 @@ namespace pfe
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+
+            ado.cmd.CommandText = "select commande.idf_cmnd, date_cmnd, commande.code_clt, article.ref_art, raisonsocial,qte_commande,design_art,article.prix_ht_stock*qte_commande as [total] from commande inner join ligne_cmnd_clt on commande.idf_cmnd = ligne_cmnd_clt.idf_cmnd inner join client on commande.code_clt = client.code_clt inner join article on article.ref_art = ligne_cmnd_clt.ref_art where commande.idf_cmnd = " + idf_cmnd;
+            ado.cmd.Connection = ado.cn;
+            ado.sda.SelectCommand = ado.cmd;
+            ado.sda.Fill(ado.dt);
             Commande report = new Commande();
             Reports.Viewer viewer = new Reports.Viewer();
-            report.SetDataSource(ado.GetData(idf_cmnd));
+            report.SetDataSource(ado.dt);
             viewer.crystalReportViewer1.ReportSource = report;
             viewer.ShowDialog();
 

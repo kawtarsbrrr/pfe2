@@ -30,6 +30,9 @@ namespace pfe
             cn.Close();
         }
 
+
+
+
         public DataTable SelectData(string proc, SqlParameter[] param)
         {
             Connect();

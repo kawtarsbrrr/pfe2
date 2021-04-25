@@ -74,6 +74,12 @@
     <Compile Include="Article.Designer.cs">
       <DependentUpon>Article.cs</DependentUpon>
     </Compile>
+    <Compile Include="BL.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>BL.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="ClientStuff.cs" />
     <Compile Include="Commande.cs">
       <AutoGen>True</AutoGen>
@@ -145,6 +151,10 @@
     </Compile>
     <EmbeddedResource Include="Article.resx">
       <DependentUpon>Article.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BL.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>BL.cs</LastGenOutput>
     </EmbeddedResource>
     <EmbeddedResource Include="Commande.rpt">
       <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>

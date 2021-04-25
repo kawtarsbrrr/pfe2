@@ -31,6 +31,8 @@ namespace pfe
         {
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.button12 = new System.Windows.Forms.Button();
+            this.button11 = new System.Windows.Forms.Button();
             this.button10 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
@@ -40,7 +42,6 @@ namespace pfe
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label8 = new System.Windows.Forms.Label();
             this.searchBoxClt = new System.Windows.Forms.TextBox();
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -58,8 +59,6 @@ namespace pfe
             this.label5 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.button11 = new System.Windows.Forms.Button();
-            this.button12 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridClt)).BeginInit();
@@ -85,7 +84,6 @@ namespace pfe
             this.tabPage1.Controls.Add(this.button6);
             this.tabPage1.Controls.Add(this.button5);
             this.tabPage1.Controls.Add(this.dataGridClt);
-            this.tabPage1.Controls.Add(this.label8);
             this.tabPage1.Controls.Add(this.searchBoxClt);
             this.tabPage1.Controls.Add(this.button7);
             this.tabPage1.Controls.Add(this.button8);
@@ -98,6 +96,26 @@ namespace pfe
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "liste";
             this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // button12
+            // 
+            this.button12.Location = new System.Drawing.Point(726, 399);
+            this.button12.Name = "button12";
+            this.button12.Size = new System.Drawing.Size(75, 40);
+            this.button12.TabIndex = 22;
+            this.button12.Text = "Quitter";
+            this.button12.UseVisualStyleBackColor = true;
+            this.button12.Click += new System.EventHandler(this.button12_Click);
+            // 
+            // button11
+            // 
+            this.button11.Location = new System.Drawing.Point(645, 399);
+            this.button11.Name = "button11";
+            this.button11.Size = new System.Drawing.Size(75, 40);
+            this.button11.TabIndex = 21;
+            this.button11.Text = "Fermer";
+            this.button11.UseVisualStyleBackColor = true;
+            this.button11.Click += new System.EventHandler(this.button11_Click);
             // 
             // button10
             // 
@@ -181,25 +199,16 @@ namespace pfe
             this.Column6.Name = "Column6";
             this.Column6.Width = 125;
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(100, 68);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(46, 13);
-            this.label8.TabIndex = 16;
-            this.label8.Text = "ID client";
-            // 
             // searchBoxClt
             // 
-            this.searchBoxClt.Location = new System.Drawing.Point(178, 65);
+            this.searchBoxClt.Location = new System.Drawing.Point(154, 66);
             this.searchBoxClt.Name = "searchBoxClt";
             this.searchBoxClt.Size = new System.Drawing.Size(100, 20);
             this.searchBoxClt.TabIndex = 15;
             // 
             // button7
             // 
-            this.button7.Location = new System.Drawing.Point(295, 63);
+            this.button7.Location = new System.Drawing.Point(260, 64);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(75, 23);
             this.button7.TabIndex = 14;
@@ -364,26 +373,6 @@ namespace pfe
             this.label2.TabIndex = 15;
             this.label2.Text = "CIN ";
             // 
-            // button11
-            // 
-            this.button11.Location = new System.Drawing.Point(645, 399);
-            this.button11.Name = "button11";
-            this.button11.Size = new System.Drawing.Size(75, 40);
-            this.button11.TabIndex = 21;
-            this.button11.Text = "Fermer";
-            this.button11.UseVisualStyleBackColor = true;
-            this.button11.Click += new System.EventHandler(this.button11_Click);
-            // 
-            // button12
-            // 
-            this.button12.Location = new System.Drawing.Point(726, 399);
-            this.button12.Name = "button12";
-            this.button12.Size = new System.Drawing.Size(75, 40);
-            this.button12.TabIndex = 22;
-            this.button12.Text = "Quitter";
-            this.button12.UseVisualStyleBackColor = true;
-            this.button12.Click += new System.EventHandler(this.button12_Click);
-            // 
             // Client
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -410,7 +399,6 @@ namespace pfe
         private System.Windows.Forms.TabControl tabControl1;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.DataGridView dataGridClt;
-        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox searchBoxClt;
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;

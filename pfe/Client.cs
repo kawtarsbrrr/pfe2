@@ -32,7 +32,7 @@ namespace pfe
         private void button7_Click(object sender, EventArgs e)
         {
             dataGridClt.Rows.Clear();
-            ado.cmd.CommandText = "select * from client where code_clt = " + int.Parse(searchBoxClt.Text);
+            ado.cmd.CommandText = "select * from client where code_clt like '%" + searchBoxClt.Text + "%' or cin_clt like '%" + searchBoxClt.Text + "%' or raisonsocial like '%" + searchBoxClt.Text + "%' or tele_clt like '%" + searchBoxClt.Text + "%' or email_clt like '%" + searchBoxClt.Text + "%'";
             ado.cmd.Connection = ado.cn;
             ado.dr = ado.cmd.ExecuteReader();
             while (ado.dr.Read())
